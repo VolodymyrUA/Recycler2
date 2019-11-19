@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uRb-kb-CG9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan-->
+        <scene sceneID="4sj-tv-k5S">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="uRb-kb-CG9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Scan" image="qr-code" id="na6-aR-S0J"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uUW-Vz-Ypv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3V6-Tq-PTg" kind="relationship" relationship="rootViewController" id="NTh-oV-xFK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GXP-qd-834" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-193" y="-276"/>
+        </scene>
+        <!--ScanVC-->
+        <scene sceneID="kij-3C-ATj">
+            <objects>
+                <viewController id="3V6-Tq-PTg" customClass="RCLScanVC" customModule="Recycler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MHI-qB-3ux">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ean-42-xHM">
+                                <rect key="frame" x="56.5" y="543.5" width="262.5" height="49.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ean-42-xHM" secondAttribute="height" multiplier="53:10" id="KiD-Fn-fpc"/>
+                                </constraints>
+                                <state key="normal" title="Trash is full"/>
+                                <connections>
+                                    <action selector="btnTrashCanIsFullClicked:" destination="3V6-Tq-PTg" eventType="touchUpInside" id="sb6-PS-408"/>
+                                </connections>
+                            </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xad-EL-OzA">
+                                <rect key="frame" x="88" y="70" width="198.5" height="40.5"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ton-Lk-ZAM">
+                                    <rect key="frame" x="0.0" y="0.0" width="198.5" height="40.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Some explaination here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJi-tJ-x6X">
+                                            <rect key="frame" x="10" y="10" width="178.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="SJi-tJ-x6X" secondAttribute="trailing" constant="10" id="4kc-iR-xhO"/>
+                                        <constraint firstAttribute="bottom" secondItem="SJi-tJ-x6X" secondAttribute="bottom" constant="10" id="I6c-h2-HQl"/>
+                                        <constraint firstItem="SJi-tJ-x6X" firstAttribute="leading" secondItem="Ton-Lk-ZAM" secondAttribute="leading" constant="10" id="JtG-AP-kZi"/>
+                                        <constraint firstItem="SJi-tJ-x6X" firstAttribute="top" secondItem="Ton-Lk-ZAM" secondAttribute="top" constant="10" id="LgZ-gI-hQS"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ean-42-xHM" firstAttribute="width" secondItem="MHI-qB-3ux" secondAttribute="width" multiplier="0.7" priority="750" id="8Hw-Bi-42P"/>
+                            <constraint firstItem="2fv-gF-hKi" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xad-EL-OzA" secondAttribute="trailing" constant="10" id="CPk-gM-1yh"/>
+                            <constraint firstItem="xad-EL-OzA" firstAttribute="top" secondItem="2fv-gF-hKi" secondAttribute="top" constant="50" id="Kp0-l5-bVJ"/>
+                            <constraint firstItem="xad-EL-OzA" firstAttribute="centerX" secondItem="2fv-gF-hKi" secondAttribute="centerX" id="MU3-1s-7q4"/>
+                            <constraint firstItem="xad-EL-OzA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2fv-gF-hKi" secondAttribute="leading" constant="10" id="QWR-ow-G7a"/>
+                            <constraint firstItem="ean-42-xHM" firstAttribute="centerX" secondItem="2fv-gF-hKi" secondAttribute="centerX" id="Rxc-At-QBd"/>
+                            <constraint firstItem="ean-42-xHM" firstAttribute="height" relation="lessThanOrEqual" secondItem="MHI-qB-3ux" secondAttribute="height" multiplier="0.15" id="YNK-yS-io6"/>
+                            <constraint firstItem="2fv-gF-hKi" firstAttribute="bottom" secondItem="ean-42-xHM" secondAttribute="bottom" constant="25" id="rJj-jG-IE4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2fv-gF-hKi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tHp-hS-4bk"/>
+                    <connections>
+                        <outlet property="explainationLabel" destination="SJi-tJ-x6X" id="E48-m1-Lfa"/>
+                        <outlet property="trashIsFullBtn" destination="ean-42-xHM" id="gKg-Sj-SKm"/>
+                        <outlet property="visualEffectView" destination="xad-EL-OzA" id="4x9-6A-01I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fga-CM-e2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557.60000000000002" y="-277.51124437781112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qr-code" width="25" height="25"/>
+    </resources>
+</document>

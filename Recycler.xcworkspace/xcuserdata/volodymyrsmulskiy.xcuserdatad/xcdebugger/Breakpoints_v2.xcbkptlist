@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Recycler/Controllers/RCLProfileVC.swift"
+            timestampString = "595891073.563879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "getTrashCans(forUser:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Recycler.RCLProfileVC.(getTrashCans in _D9102BAD3B6FC3FDA31E8A5B08264403)(forUser: Recycler.User) -&gt; ()"
+                  moduleName = "Recycler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/volodymyrsmulskiy/RecyclerDiploma/Recycler/Controllers/RCLProfileVC.swift"
+                  timestampString = "595890917.960395"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Recycler.TrashCan&gt;) -&gt; () in Recycler.RCLProfileVC.(getTrashCans in _D9102BAD3B6FC3FDA31E8A5B08264403)(forUser: Recycler.User) -&gt; ()"
+                  moduleName = "Recycler"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/volodymyrsmulskiy/RecyclerDiploma/Recycler/Controllers/RCLProfileVC.swift"
+                  timestampString = "595890917.96339"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "86">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
