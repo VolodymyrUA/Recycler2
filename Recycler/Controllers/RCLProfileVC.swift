@@ -125,6 +125,7 @@ class RCLProfileVC: UIViewController {
     }
     
     
+    
     private func getTrashCans(forUser: User) {
         database.getTrashCansBy(userId: forUser.id!) { result in
             self.userTrashCans = result
