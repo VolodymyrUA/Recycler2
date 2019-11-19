@@ -124,6 +124,7 @@ class RCLProfileVC: UIViewController {
         self.phone.text = user.phoneNumber
     }
     
+    
     private func getTrashCans(forUser: User) {
         database.getTrashCansBy(userId: forUser.id!) { result in
             self.userTrashCans = result
